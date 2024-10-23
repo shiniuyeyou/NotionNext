@@ -5,7 +5,8 @@
  * @returns
  */
 const Style = () => {
-  const newLocal = `
+  return (
+    <style jsx global>{`
       body {
         background-color: #f7f9fe;
         overflow-x: hidden;
@@ -62,17 +63,51 @@ const Style = () => {
         }
       }
 
+      /****** 新增style  by arale ******/
+      .text-black {
+        color:#424242 ;
+      }
 
-      // ******新增style by arale******
-      
-      .bg-indigo-600 {
-      background-color:#df9283 !important;
+      .dark\:hover\:bg-indigo-600:hover:is(.dark *) {
+      background-color:#d68272 !important;
       }
 
 
-    `
-  return (
-    <style jsx global>{newLocal}</style>
+      #nav-mobile > div:nth-child > a {
+      font-size: 16px;
+      font-weight: 350;
+      }
+
+
+      #container-inner {
+          margin-bottom: 20px;
+      }
+
+
+       #notion-article > main {
+       color:#424242 !important;
+       }
+
+      #notion-article > main.notion:is(.dark *) {
+      color:#fff !important;
+      }
+
+
+     #post-info > div {
+     font-weight:600 !important;
+     }
+
+     
+
+      #__next-build-watcher {
+      display:none;
+      }
+
+      #pc-next-post {
+      display:none;
+      }
+
+    `}</style>
   )
 }
 

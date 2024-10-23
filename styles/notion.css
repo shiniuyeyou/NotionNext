@@ -24,7 +24,8 @@
   --notion-purple: rgb(105, 64, 165);
   --notion-teal: rgb(15, 123, 108);
   --notion-yellow: rgb(223, 171, 1);
-  --notion-orange: rgb(217, 115, 13);
+  /* --notion-orange: rgb(217, 115, 13); */
+  --notion-orange:rgb(223, 146, 131);
   --notion-brown: rgb(100, 71, 58);
   --notion-gray: rgb(155, 154, 151);
 
